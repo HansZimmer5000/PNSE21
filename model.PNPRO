@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- This project file has been saved by the New GreatSPN Editor, v.100 --><project name="AtomixConsensus" version="121">
+  <gspn name="GSPN" show-color-cmd="false" show-fluid-cmd="false" zoom="150">
+    <nodes>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.0" label-y="-1.5" magnets="FIVE_PER_SIDE" marking="atomixcount" name="Aup" shown-as="\mathrm{A_{up}}" x="18.0" y="25.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.0" magnets="FIVE_PER_SIDE" name="AHWdown" shown-as="\mathrm{A_{HWfailed}}" x="8.0" y="40.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-y="-2.0" magnets="FIVE_PER_SIDE" marking="1" name="Coup" shown-as="\mathrm{CO_{up}}" x="38.0" y="17.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.5" label-y="-1.5" magnets="FIVE_PER_SIDE" name="Codown" shown-as="CO_{failed}" x="30.0" y="17.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="OupV2" shown-as="\mathrm{O_{upV2}}" x="117.0" y="28.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="2.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="Ov2SWdown" shown-as="\mathrm{O_{failedV2}}" x="113.0" y="18.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="6.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixUpgradeV1V2Ready" shown-as="AtomixUpgradeReady" x="57.0" y="59.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.0" label-y="-2.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeV1V2Ready" shown-as="ONOSUpgradeReady" x="57.0" y="55.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="7.0" label-y="0.0" magnets="FIVE_PER_SIDE" name="ONOSBeingUpgradedV1V2" shown-as="ONOSBeingUpgraded" x="80.0" y="55.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="6.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixBeingUpgradedV1V2" shown-as="AtomixBeingUpgraded" x="73.0" y="68.0"/>
+      <place label-x="1.5" label-y="-1.5" magnets="FIVE_PER_SIDE" marking="atomixcount" name="AtomixLeftToUpgrade" x="64.0" y="63.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="2.0" label-y="-2.0" magnets="FIVE_PER_SIDE" marking="atomixlinks" name="AtomixLinkUp" shown-as="AtomixLink_{up}" x="21.0" y="51.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="4.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixLinkDown" shown-as="AtomixLink_{failed}" x="21.0" y="63.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="6.0" label-y="0.0" magnets="FIVE_PER_SIDE" name="Atomix" shown-as="AtomixLink_{failedPartitioning}" x="21.0" y="79.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-4.0" label-y="0.5" magnets="FIVE_PER_SIDE" name="AtomixPartitioned" shown-as="A_{Partitionfailed}" x="17.0" y="79.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-y="-2.0" magnets="FIVE_PER_SIDE" marking="onoslinks" name="ONOSAtomixLinkUp" shown-as="ONOSAtomixLink_{up}" x="118.0" y="51.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-5.0" label-y="3.0" magnets="FIVE_PER_SIDE" name="ONOSAtomixLinkDown" shown-as="ONOSAtomixLink_{failed}" x="115.0" y="63.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-0.5" label-y="-1.5" magnets="FIVE_PER_SIDE" name="LinkPartitioningONOSAtomix" shown-as="ONOSAtomixLink_{failedPartitioning}" x="168.0" y="50.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-5.0" label-y="-1.5" magnets="FIVE_PER_SIDE" name="ONOSv1Partitioned" shown-as="O_{PartitionfailedV1}" x="140.0" y="76.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="4.5" label-y="-1.5" name="ONOSv2Partitioned" shown-as="O_{PartitionfailedV2}" x="158.0" y="76.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWFailRate" delay-x="-5.0" label-x="-2.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixFailHW" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{F_{HW}}" type="EXP" x="11.55" y="35.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="8.0" magnets="FIVE_PER_SIDE" name="FCO" rotation="1.5707963267948966" shown-as="\mathit{F_{CO}}" type="IMM" x="30.85" y="10.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWRecRate" delay-x="-2.0" delay-y="2.0" label-x="-1.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixRecoverHW" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{R_{HW}}" type="EXP" x="5.55" y="35.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="7.0" label-x="1.0" label-y="1.0" magnets="THREE_PER_SIDE" name="RCO" rotation="1.5707963267948966" shown-as="\mathit{R_{CO}}" type="IMM" x="30.85" y="18.5"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-3.0" label-y="-0.5" magnets="FIVE_PER_SIDE" marking="onoscount" name="Ov1up" shown-as="\mathrm{O_{upV1}}" x="76.0" y="28.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="Ov1SWdown" shown-as="\mathrm{O_{SWfailedV1}}" x="71.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSv1SWFailRate" delay-x="-4.5" delay-y="2.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv1FailSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{SW}}" type="EXP" x="68.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSSWRecRate" delay-x="-4.5" delay-y="1.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv1RecoverSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{SW}}" type="EXP" x="74.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSv2SWFailRate" delay-x="-6.0" delay-y="1.5" label-x="0.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv2FailSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{SW}}" type="EXP" x="110.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSSWRecRate" delay-x="-4.5" delay-y="1.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv2RecoverSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{SW}}" type="EXP" x="116.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="UpgradeClusterRate" delay-x="0.0" delay-y="4.0" height="6.0" label-x="0.5" label-y="-4.0" magnets="FIVE_PER_SIDE" name="UpgradeClusterV1V2" nservers-x="0.5" shown-as="UpgradeCluster" type="EXP" x="47.55" y="56.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSUpgradeFinishedRate" delay-x="-3.5" delay-y="2.5" label-x="-2.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeFinishedV1V2" nservers-x="0.5" shown-as="ONOSUpgradeFinished" type="EXP" x="88.55" y="50.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="4.0" label-x="-5.5" label-y="1.0" magnets="FIVE_PER_SIDE" name="StartUpgradeONOSV1V2" shown-as="StartUpgradeONOS" type="IMM" x="73.85" y="54.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-y="1.5" magnets="FIVE_PER_SIDE" name="StartUpgradeAtomixV1V2" shown-as="StartUpgradeAtomix" type="IMM" x="57.85" y="68.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="AtomixUpgradeFinishedRate" delay-x="-2.0" delay-y="2.0" label-x="7.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixUpgradeFinishedV1V2" nservers-x="0.5" shown-as="AtomixUpgradeFinished" type="EXP" x="51.55" y="74.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkFailRate" delay-x="-4.5" label-x="-3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="LinkFailAtomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{LinkFails_{Atomix}}" type="EXP" x="18.55" y="57.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkRecRate" delay-x="1.5" label-x="3.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="LinkRecoveryAtomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{LinkRecovers_{Atomix}}" type="EXP" x="24.55" y="57.0"/>
+      <transition alt-name-fn="LATEX_TEXT" magnets="FIVE_PER_SIDE" name="PartitionAtomixInstance" rotation="1.5707963267948966" shown-as="\mathit{PartitionAtomixInstance}\hspace{1pt}" type="IMM" x="17.85" y="74.0"/>
+      <transition delay="LinkRecRate" label-x="4.5" label-y="-0.5" magnets="FIVE_PER_SIDE" name="RecoverPartition" nservers-x="0.5" rotation="1.5707963267948966" type="EXP" x="17.55" y="84.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkFailRate" delay-x="-4.0" delay-y="1.5" label-x="-5.0" label-y="0.0" magnets="FIVE_PER_SIDE" name="LinkFailsONOSAtomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{LinkFails_{ONOSAtomix}}" type="EXP" x="111.55" y="57.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkRecRate" delay-x="0.0" delay-y="1.5" label-x="6.0" label-y="0.0" magnets="FIVE_PER_SIDE" name="LinkRecoversONOSAtomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{LinkRecovers_{ONOSAtomix}}" type="EXP" x="115.55" y="57.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="5.0" label-x="-6.0" label-y="1.5" magnets="FIVE_PER_SIDE" name="PartitionONOSV1" rotation="1.5707963267948966" shown-as="PartitionONOS_{v1}" type="IMM" x="139.85" y="65.5"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkRecRate" height="7.0" label-x="0.5" label-y="3.0" magnets="FIVE_PER_SIDE" name="PartitionRecoversONOSv1Atomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{PartitionRecovers_{ONOSv1Atomix}}" type="EXP" x="140.55" y="82.5"/>
+      <transition alt-name-fn="LATEX_TEXT" height="5.0" label-x="-4.5" label-y="1.5" magnets="FIVE_PER_SIDE" name="PartitionONOSV2" rotation="1.5707963267948966" shown-as="PartitionONOS_{v2}" type="IMM" x="157.85" y="65.5"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkRecRate" height="8.0" label-y="3.0" magnets="FIVE_PER_SIDE" name="PartitionRecoversONOSv2Atomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{PartitionRecovers_{ONOSv2Atomix}}" type="EXP" x="158.55" y="82.0"/>
+      <constant consttype="INTEGER" name="atomixmajority" value="2" x="139.625" y="100.0"/>
+      <constant consttype="INTEGER" name="onoscount" value="3" x="141.8125" y="98.0"/>
+      <constant consttype="INTEGER" name="atomixcount" value="3" x="140.8125" y="99.0"/>
+      <constant consttype="INTEGER" name="atomixlinks" value="3" x="141.1875" y="102.0"/>
+      <constant consttype="INTEGER" name="onoslinks" value="9" x="142.125" y="101.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#c0e7ff" height="42.0" horiz-pos="2" name="textBox1" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="105.875" x="100.625" y="48.0">ONOS Partitioning</text-box>
+      <text-box bold="true" border-color="#000000" fill-color="#c0e7ff" height="42.0" horiz-pos="2" name="textBox2" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="34.296875" x="2.8515625" y="48.0">    ATOMIX Partitioning</text-box>
+      <text-box bold="true" border-color="#000000" fill-color="#c8ffc0" height="32.0" horiz-pos="2" name="textBox3" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="57.0" x="40.0" y="48.0">                                                                 UpgradeV1V2</text-box>
+      <text-box bold="true" border-color="#000000" fill-color="#ffffff" height="17.5" horiz-pos="2" name="textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="29.5" x="103.5" y="17.5">ONOS v2</text-box>
+      <text-box bold="true" border-color="#000000" fill-color="#dbdbdb" height="32.0" horiz-pos="2" name="textBox5" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="38.69921875" x="2.650390625" y="12.0">ATOMIX</text-box>
+      <text-box bold="true" border-color="#000000" fill-color="#ffffff" height="17.5" horiz-pos="2" name="textBox6" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="28.0" x="62.5" y="17.5">ONOS v1</text-box>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.0" magnets="FIVE_PER_SIDE" name="ASWdown" shown-as="\mathrm{A_{SWfailed}}" x="19.0" y="40.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="AtomixSWFailRate" label-x="-2.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixFailSW" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{F_{SW}}" type="EXP" x="22.55" y="35.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="AtomixSWRecRate" delay-x="-3.0" delay-y="2.0" label-x="-1.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixRecoverSW" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{R_{SW}}" type="EXP" x="16.55" y="35.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="Ov1HWdown" shown-as="\mathrm{O_{HWfailedV1}}" x="81.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWRecRate" delay-x="-3.0" delay-y="2.0" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv1RecoverHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{HW}}" type="EXP" x="84.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWFailRate" delay-x="-2.5" delay-y="2.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv1FailHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{HW}}" type="EXP" x="78.55" y="21.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="Ov2HWdown" shown-as="\mathrm{O_{HWfailedV2}}" x="122.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWFailRate" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv2FailHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{HW}}" type="EXP" x="119.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWRecRate" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv2RecoverHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{HW}}" type="EXP" x="125.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSUpgradeFailFinishedRate" delay-x="-4.5" delay-y="2.0" label-x="-2.5" label-y="3.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeFinishedV1V2FailEncountered" nservers-x="0.5" shown-as="ONOSUpgradeFinishedFailEncountered" type="EXP" x="88.55" y="59.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="OupV3" shown-as="\mathrm{O_{upV3}}" x="156.0" y="28.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-0.5" magnets="FIVE_PER_SIDE" name="Ov3SWdown" shown-as="\mathrm{O_{SWfailedV3}}" x="152.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSv3SWFailRate" delay-x="-6.0" delay-y="2.0" label-x="0.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv3FailSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{SW}}" type="EXP" x="149.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSSWRecRate" delay-x="-3.5" delay-y="2.0" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv3RecoverSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{SW}}" type="EXP" x="155.55" y="21.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#ffffff" height="17.5" horiz-pos="2" name="textBox7" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="29.5" x="142.5" y="17.5">ONOS v3</text-box>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-0.5" magnets="FIVE_PER_SIDE" name="Ov3HWdown" shown-as="\mathrm{O_{HWfailedV3}}" x="161.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWFailRate" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv3FailHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{HW}}" type="EXP" x="158.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWRecRate" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv3RecoverHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{HW}}" type="EXP" x="164.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="5.0" label-x="-4.5" label-y="1.5" magnets="FIVE_PER_SIDE" name="PartitionONOSV3" rotation="1.5707963267948966" shown-as="PartitionONOS_{v3}" type="IMM" x="177.85" y="65.5"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-4.5" label-y="-1.5" name="ONOSv3Partitioned" shown-as="O_{PartitionfailedV3}" x="178.0" y="76.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkRecRate" height="8.0" label-y="3.0" magnets="FIVE_PER_SIDE" name="PartitionRecoversONOSv3Atomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{PartitionRecovers_{ONOSv3Atomix}}" type="EXP" x="178.55" y="82.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="OupV4" shown-as="\mathrm{O_{upV4}}" x="197.0" y="28.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="Ov4SWdown" shown-as="\mathrm{O_{SWfailedV4}}" x="193.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSv4SWFailRate" delay-x="-6.5" delay-y="2.0" label-x="0.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv4FailSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{SW}}" type="EXP" x="190.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSSWRecRate" delay-x="-4.5" delay-y="2.0" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv4RecoverSW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{SW}}" type="EXP" x="196.55" y="21.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#ffffff" height="17.5" horiz-pos="2" name="textBox8" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="29.5" x="183.5" y="17.5">ONOS v4</text-box>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="Ov4HWdown" shown-as="\mathrm{O_{HWfailedV4}}" x="202.0" y="18.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWFailRate" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv4FailHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{F_{HW}}" type="EXP" x="199.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="HWRecRate" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSv4RecoverHW" nservers-x="0.5" rotation="-0.0" shown-as="\mathit{R_{HW}}" type="EXP" x="205.55" y="21.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="5.0" label-x="-4.5" label-y="1.5" magnets="FIVE_PER_SIDE" name="PartitionONOSV4" rotation="1.5707963267948966" shown-as="PartitionONOS_{v4}" type="IMM" x="196.85" y="65.5"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-4.5" label-y="-1.5" name="ONOSv4Partitioned" shown-as="O_{PartitionfailedV4}" x="197.0" y="76.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="LinkRecRate" height="8.0" label-y="3.0" magnets="FIVE_PER_SIDE" name="PartitionRecoversONOSv4Atomix" nservers-x="0.5" rotation="1.5707963267948966" shown-as="\mathit{PartitionRecovers_{ONOSv4Atomix}}" type="EXP" x="197.55" y="82.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="5.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixUpgradeV2V3Ready" shown-as="AtomixUpgradeReady" x="57.0" y="93.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.0" label-y="-2.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeV2V3Ready" shown-as="ONOSUpgradeReady" x="57.0" y="89.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="7.0" label-y="0.0" magnets="FIVE_PER_SIDE" name="ONOSBeingUpgradedV2V3" shown-as="ONOSBeingUpgraded" x="80.0" y="89.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="6.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixBeingUpgradedV2V3" shown-as="AtomixBeingUpgraded" x="73.0" y="102.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="1.5" label-y="-1.5" magnets="FIVE_PER_SIDE" marking="atomixcount" name="AtomixLeftToUpgradeV2V3" shown-as="AtomixLeftToUpgrade" x="64.0" y="97.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="UpgradeClusterRate" delay-x="0.0" delay-y="4.0" height="6.0" label-y="-4.0" magnets="FIVE_PER_SIDE" name="UpgradeClusterV2V3" nservers-x="0.5" shown-as="UpgradeCluster" type="EXP" x="47.55" y="90.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSUpgradeFinishedRate" delay-x="-1.5" delay-y="2.0" label-x="-2.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeFinishedV2V3" nservers-x="0.5" shown-as="ONOSUpgradeFinished" type="EXP" x="91.55" y="84.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="4.0" label-x="-5.5" label-y="1.0" magnets="FIVE_PER_SIDE" name="StartUpgradeONOSV2V3" shown-as="StartUpgradeONOS" type="IMM" x="73.85" y="88.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-y="1.5" magnets="FIVE_PER_SIDE" name="StartUpgradeAtomixV2V3" shown-as="StartUpgradeAtomix" type="IMM" x="57.85" y="102.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="AtomixUpgradeFinishedRate" delay-x="-2.0" delay-y="1.5" label-x="7.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixUpgradeFinishedV2V3" nservers-x="0.5" shown-as="AtomixUpgradeFinished" type="EXP" x="51.55" y="108.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#c8ffc0" height="32.0" horiz-pos="2" name="textBox9" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="57.0" x="40.0" y="82.0">                                                                 UpgradeV2V3</text-box>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSUpgradeFailFinishedRate" label-x="-4.5" label-y="2.0" magnets="FIVE_PER_SIDE" name="ONOSUpgradeFinishedV2V3FailEncountered" nservers-x="0.5" shown-as="ONOSUpgradeFinishedFailEncountered" type="EXP" x="91.55" y="93.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="6.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixUpgradeV3V4Ready" shown-as="AtomixUpgradeReady" x="57.0" y="127.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-2.0" label-y="-2.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeV3V4Ready" shown-as="ONOSUpgradeReady" x="57.0" y="123.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="7.0" label-y="0.0" magnets="FIVE_PER_SIDE" name="ONOSBeingUpgradedV3V4" shown-as="ONOSBeingUpgraded" x="80.0" y="123.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="6.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixBeingUpgradedV3V4" shown-as="AtomixBeingUpgraded" x="73.0" y="136.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="1.5" label-y="-1.5" magnets="FIVE_PER_SIDE" marking="atomixcount" name="AtomixLeftToUpgradeV3V4" shown-as="AtomixLeftToUpgrade" x="64.0" y="131.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="UpgradeClusterRate" delay-x="0.0" delay-y="4.0" height="6.0" label-y="-4.0" magnets="FIVE_PER_SIDE" name="UpgradeClusterV3V4" nservers-x="0.5" shown-as="UpgradeCluster" type="EXP" x="47.55" y="124.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSUpgradeFinishedRate" label-x="-2.5" magnets="FIVE_PER_SIDE" name="ONOSUpgradeFinishedV3V4" nservers-x="0.5" shown-as="ONOSUpgradeFinished" type="EXP" x="91.55" y="118.0"/>
+      <transition alt-name-fn="LATEX_TEXT" height="4.0" label-x="-5.5" label-y="1.0" magnets="FIVE_PER_SIDE" name="StartUpgradeONOSV3V4" shown-as="StartUpgradeONOS" type="IMM" x="73.85" y="122.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-y="1.5" magnets="FIVE_PER_SIDE" name="StartUpgradeAtomixV3V4" shown-as="StartUpgradeAtomix" type="IMM" x="57.85" y="136.0"/>
+      <transition alt-name-fn="LATEX_TEXT" delay="AtomixUpgradeFinishedRate" delay-x="-1.5" delay-y="2.5" label-x="7.0" label-y="-1.0" magnets="FIVE_PER_SIDE" name="AtomixUpgradeFinishedV3V4" nservers-x="0.5" shown-as="AtomixUpgradeFinished" type="EXP" x="51.55" y="142.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#c8ffc0" height="32.0" horiz-pos="2" name="textBox10" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="57.0" x="40.0" y="116.0">                                                                 UpgradeV3V4</text-box>
+      <transition alt-name-fn="LATEX_TEXT" delay="ONOSUpgradeFailFinishedRate" label-x="-4.5" label-y="2.0" magnets="FIVE_PER_SIDE" name="ONOSUpgradeFinishedV3V4FailEncountered" nservers-x="0.5" shown-as="ONOSUpgradeFinishedFailEncountered" type="EXP" x="91.55" y="127.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="5.0" label-y="-2.0" magnets="FIVE_PER_SIDE" name="PartitionLastAtomixInstances" rotation="1.5707963267948966" shown-as="\mathit{PartitionLastAtomixInstances}" type="IMM" x="6.85" y="51.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="3.0" label-y="-1.5" magnets="FIVE_PER_SIDE" name="LastAtomixPartitioned" shown-as="A_{Partitionfailed}" x="5.0" y="61.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="0.5" label-y="2.0" magnets="FIVE_PER_SIDE" name="LastLinkPartitioningAtomix" shown-as="AtomixLink_{failedPartitioning}" x="14.0" y="63.0"/>
+      <transition delay="LinkRecRate" label-x="6.0" label-y="-0.5" magnets="FIVE_PER_SIDE" name="RecoverLastPartition" nservers-x="0.5" rotation="1.5707963267948966" type="EXP" x="7.55" y="69.0"/>
+      <place marking="oldarch" name="OldArch" x="94.0" y="12.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-4.5" label-y="-1.5" marking="1" name="ONOSClusterUp" shown-as="ONOSCluster_{up}" x="137.0" y="5.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-1.0" name="ONOSClusterDown" shown-as="ONOSCluster_{failed}" x="143.0" y="8.0"/>
+      <transition label-y="2.5" magnets="FIVE_PER_SIDE" name="ONOSClusterFails" type="IMM" x="132.85" y="9.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="-5.5" magnets="FIVE_PER_SIDE" name="ONOSClusterRecoversv1" shown-as="ONOSClusterRecovers_{v1}" type="IMM" x="149.85" y="5.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="0.5" label-y="-2.0" magnets="FIVE_PER_SIDE" name="ONOSClusterRecoversv2" shown-as="ONOSClusterRecovers_{v2}" type="IMM" x="155.85" y="5.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="-4.5" label-y="2.0" magnets="FIVE_PER_SIDE" name="ONOSClusterRecoversv3" shown-as="ONOSClusterRecovers_{v3}" type="IMM" x="149.85" y="11.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="2.0" label-y="2.0" magnets="FIVE_PER_SIDE" name="ONOSClusterRecoversv4" shown-as="ONOSClusterRecovers_{v4}" type="IMM" x="155.85" y="11.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-y="1.5" name="ClusterFailsCo" shown-as="ClusterFails_{CO}" type="IMM" x="82.85" y="8.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="4.5" label-y="-1.0" magnets="FIVE_PER_SIDE" name="ClusterRecovers" rotation="3.141592653589793" shown-as="ClusterRecovers" type="IMM" x="88.85" y="2.0"/>
+      <place alt-name-fn="LATEX_TEXT" label-x="-3.5" label-y="-0.5" magnets="FIVE_PER_SIDE" marking="1" name="Cluster" shown-as="Cluster_{up}" x="88.0" y="6.0"/>
+      <transition alt-name-fn="LATEX_TEXT" label-x="1.0" name="ClusterFailsONOS" shown-as="ClusterFails_{ONOS}" type="IMM" x="94.85" y="8.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#f7c0ff" height="15.5" horiz-pos="2" name="__textBox0" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="28.5" x="79.0" y="1.0">Cluster</text-box>
+      <text-box bold="true" border-color="#000000" fill-color="none" height="14.5" horiz-pos="2" name="__textBox1" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="37.5" x="126.5" y="1.0">ONOS</text-box>
+      <constant consttype="REAL" name="AtomixSWFailRate" value="ONOSv0SWFailRate" x="140.0" y="110.0"/>
+      <constant consttype="REAL" name="HWFailRate" value="0.1667" x="140.0" y="113.0"/>
+      <constant consttype="REAL" name="AtomixSWRecRate" value="259200" x="140.0" y="111.0"/>
+      <constant consttype="REAL" name="HWRecRate" value="60" x="140.0" y="114.0"/>
+      <constant consttype="REAL" name="LinkFailRate" value="0.25" x="140.0" y="116.0"/>
+      <constant consttype="REAL" name="LinkRecRate" value="2880" x="140.0" y="117.0"/>
+      <constant consttype="REAL" name="ONOSv0SWFailRate" value="2.5" x="140.25" y="119.0"/>
+      <constant consttype="REAL" name="ONOSSWRecRate" value="1440" x="140.25" y="124.0"/>
+      <constant consttype="REAL" name="ONOSv1SWFailRate" value="2.1067" x="140.25" y="120.0"/>
+      <constant consttype="REAL" name="ONOSv2SWFailRate" value="1.8725" x="140.25" y="121.0"/>
+      <constant consttype="REAL" name="ONOSv3SWFailRate" value="1.675" x="140.25" y="122.0"/>
+      <constant consttype="REAL" name="ONOSv4SWFailRate" value="1.5042" x="140.25" y="123.0"/>
+      <constant consttype="REAL" name="UpgradeClusterRate" value="0.33333" x="140.0625" y="126.0"/>
+      <constant consttype="REAL" name="AtomixUpgradeFinishedRate" value="8640" x="140.125" y="127.0"/>
+      <constant consttype="REAL" name="ONOSUpgradeFinishedRate" value="2880" x="139.9375" y="128.0"/>
+      <constant consttype="REAL" name="ONOSUpgradeFailFinishedRate" value="180" x="140.0" y="129.0"/>
+      <constant consttype="INTEGER" name="alinksub1" value="2" x="142.125" y="104.0"/>
+      <constant consttype="INTEGER" name="alinksub2" value="1" x="142.125" y="105.0"/>
+      <constant consttype="INTEGER" name="acountsub1" value="2" x="141.4375" y="106.0"/>
+      <constant consttype="INTEGER" name="oldarch" value="0" x="142.8125" y="103.0"/>
+      <text-box bold="true" border-color="#000000" fill-color="#ffcf40" height="34.5" name="__textBox3" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" width="32.625" x="138.6875" y="96.75">Parameters</text-box>
+      <text-box bold="true" border-color="none" fill-color="none" height="1.0" name="__textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" x="149.0" y="100.0">Formula: atomixcount/2+1</text-box>
+      <text-box bold="true" border-color="none" fill-color="none" height="1.4375" name="copy___textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" x="150.0" y="101.0">Formula: onoscount*atomixcount</text-box>
+      <text-box bold="true" border-color="none" fill-color="none" height="1.859375" name="copy_copy___textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" x="152.0" y="102.0">Formula: atomixcount*(atomixcount-1)/2</text-box>
+      <text-box bold="true" border-color="none" fill-color="none" height="1.859375" name="copy_copy_copy___textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" x="148.0" y="104.0703125">Formula: atomixlinks-1</text-box>
+      <text-box bold="true" border-color="none" fill-color="none" height="1.859375" name="copy_copy_copy_copy___textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" x="148.0" y="105.0703125">Formula: atomixlinks-2</text-box>
+      <text-box bold="true" border-color="none" fill-color="none" height="1.859375" name="copy_copy_copy_copy_copy___textBox4" shadow="true" shape="ROUND_RECTANGLE" text-color="#000000" x="148.0" y="106.0703125">Formula: atomixcount-1</text-box>
+    </nodes>
+    <edges>
+      <arc head="AtomixFailHW" kind="INPUT" tail="Aup"/>
+      <arc head="AHWdown" kind="OUTPUT" tail="AtomixFailHW"/>
+      <arc head="Codown" kind="OUTPUT" tail="FCO"/>
+      <arc head="FCO" head-magnet="0" kind="INPUT" tail="Coup"/>
+      <arc head="Aup" kind="OUTPUT" tail="AtomixRecoverHW"/>
+      <arc head="ONOSv1FailSW" head-magnet="19" kind="INPUT" tail="Ov1up"/>
+      <arc head="Ov1up" kind="OUTPUT" tail="ONOSv1RecoverSW"/>
+      <arc head="ONOSv2FailSW" head-magnet="19" kind="INPUT" tail="OupV2"/>
+      <arc head="OupV2" kind="OUTPUT" tail="ONOSv2RecoverSW" tail-magnet="18"/>
+      <arc head="ONOSUpgradeV1V2Ready" kind="OUTPUT" tail="UpgradeClusterV1V2" tail-magnet="5"/>
+      <arc head="ONOSUpgradeFinishedV1V2" kind="INPUT" tail="ONOSBeingUpgradedV1V2"/>
+      <arc broken="true" head="OupV2" kind="OUTPUT" mult-k="2.7786852151155474" tail="ONOSUpgradeFinishedV1V2">
+        <point x="94.5" y="51.0"/>
+        <point x="104.5" y="29.0"/>
+      </arc>
+      <arc head="AtomixUpgradeV1V2Ready" head-magnet="8" kind="OUTPUT" tail="UpgradeClusterV1V2" tail-magnet="9"/>
+      <arc head="StartUpgradeONOSV1V2" kind="INPUT" tail="ONOSUpgradeV1V2Ready"/>
+      <arc head="ONOSBeingUpgradedV1V2" kind="OUTPUT" tail="StartUpgradeONOSV1V2"/>
+      <arc head="StartUpgradeAtomixV1V2" kind="INPUT" tail="AtomixUpgradeV1V2Ready"/>
+      <arc head="AtomixBeingUpgradedV1V2" kind="OUTPUT" tail="StartUpgradeAtomixV1V2"/>
+      <arc head="Aup" head-magnet="0" kind="OUTPUT" mult-k="1.20654296875" tail="AtomixUpgradeFinishedV1V2">
+        <point x="38.5" y="61.0"/>
+        <point x="38.5" y="36.0"/>
+      </arc>
+      <arc head="AtomixUpgradeFinishedV1V2" kind="INPUT" mult-k="1.2633789062499998" tail="AtomixBeingUpgradedV1V2">
+        <point x="74.0" y="75.0"/>
+      </arc>
+      <arc head="StartUpgradeAtomixV1V2" kind="INPUT" mult-k="1.1383789062499998" tail="Aup" tail-magnet="2">
+        <point x="36.0" y="36.5"/>
+        <point x="36.0" y="69.0"/>
+      </arc>
+      <arc head="AtomixUpgradeV1V2Ready" head-magnet="8" kind="OUTPUT" tail="AtomixUpgradeFinishedV1V2">
+        <point x="52.0" y="62.0"/>
+      </arc>
+      <arc head="StartUpgradeAtomixV1V2" head-magnet="3" kind="INPUT" mult-k="0.8454101562500002" tail="AtomixLeftToUpgrade">
+        <point x="58.0" y="64.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV1V2" head-magnet="12" kind="INHIBITOR" mult-k="0.76298828125" tail="AtomixLeftToUpgrade">
+        <point x="74.0" y="64.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV1V2" head-magnet="0" kind="INPUT" mult-k="1.06240234375" tail="Ov1up">
+        <point x="86.0" y="40.5"/>
+      </arc>
+      <arc head="ONOSUpgradeV1V2Ready" kind="OUTPUT" tail="StartUpgradeONOSV1V2" tail-magnet="15">
+        <point x="66.0" y="51.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV1V2" head-magnet="9" kind="INHIBITOR" tail="ONOSBeingUpgradedV1V2" tail-magnet="7"/>
+      <arc head="UpgradeClusterV1V2" head-magnet="6" kind="INHIBITOR" tail="ONOSUpgradeV1V2Ready">
+        <point x="58.0" y="58.0"/>
+      </arc>
+      <arc head="LinkFailAtomix" kind="INPUT" tail="AtomixLinkUp"/>
+      <arc head="AtomixLinkUp" kind="OUTPUT" tail="LinkRecoveryAtomix"/>
+      <arc head="AtomixLinkDown" kind="OUTPUT" tail="LinkFailAtomix"/>
+      <arc head="LinkRecoveryAtomix" kind="INPUT" tail="AtomixLinkDown"/>
+      <arc head="PartitionAtomixInstance" kind="INPUT" mult="alinksub1" mult-k="0.76728515625" mult-x="2.034455259339989" mult-y="-0.6098123290169184" tail="AtomixLinkDown">
+        <point x="22.0" y="75.0"/>
+      </arc>
+      <arc head="PartitionAtomixInstance" kind="INPUT" mult-k="1.30263671875" tail="Aup" tail-magnet="9">
+        <point x="3.5" y="26.5"/>
+        <point x="3.5" y="75.0"/>
+      </arc>
+      <arc head="Atomix" kind="OUTPUT" mult="alinksub1" mult-k="0.37041015625000007" mult-x="2.0" mult-y="0.14794921875" tail="PartitionAtomixInstance"/>
+      <arc head="AtomixPartitioned" kind="OUTPUT" tail="PartitionAtomixInstance"/>
+      <arc head="RecoverPartition" kind="INPUT" mult="alinksub1" mult-k="0.48505859375000004" mult-x="2.0" mult-y="0.07470703125" tail="Atomix"/>
+      <arc head="RecoverPartition" kind="INPUT" tail="AtomixPartitioned"/>
+      <arc head="AtomixLinkUp" kind="OUTPUT" mult-k="0.6583007812500001" tail="RecoverPartition">
+        <point x="34.0" y="85.0"/>
+        <point x="34.0" y="52.0"/>
+      </arc>
+      <arc head="Aup" head-magnet="11" kind="OUTPUT" mult-k="2.04990234375" tail="RecoverPartition">
+        <point x="1.5" y="85.0"/>
+        <point x="1.5" y="26.0"/>
+      </arc>
+      <arc head="AtomixLinkDown" kind="OUTPUT" mult="alinksub2" mult-k="0.49990234375" mult-x="4.5" mult-y="0.9169866530332911" tail="RecoverPartition">
+        <point x="18.0" y="88.0"/>
+        <point x="21.70936150418713" y="88.0"/>
+        <point x="35.0" y="88.0"/>
+        <point x="35.0" y="64.0"/>
+      </arc>
+      <arc head="LinkFailsONOSAtomix" head-magnet="15" kind="INPUT" mult-k="0.6360351562500002" tail="ONOSAtomixLinkUp">
+        <point x="113.0" y="52.0"/>
+      </arc>
+      <arc head="ONOSAtomixLinkUp" kind="OUTPUT" mult-k="1.29990234375" tail="LinkRecoversONOSAtomix">
+        <point x="115.96240234375" y="54.0751953125"/>
+      </arc>
+      <arc head="ONOSAtomixLinkDown" kind="OUTPUT" tail="LinkFailsONOSAtomix"/>
+      <arc head="LinkRecoversONOSAtomix" kind="INPUT" tail="ONOSAtomixLinkDown"/>
+      <arc head="ONOSv1Partitioned" kind="OUTPUT" tail="PartitionONOSV1" tail-magnet="6"/>
+      <arc head="PartitionRecoversONOSv1Atomix" kind="INPUT" tail="ONOSv1Partitioned"/>
+      <arc head="PartitionONOSV1" head-magnet="19" kind="INPUT" mult-k="1.11806640625" mult-x="0.3604152216409915" mult-y="-1.147199072355832" tail="Ov1up">
+        <point x="86.0" y="40.5"/>
+        <point x="138.5" y="40.5"/>
+      </arc>
+      <arc head="Ov1up" kind="OUTPUT" mult-k="3.1206054687500004" mult-x="-1.1985777450249202" mult-y="0.6563555972410029" tail="PartitionRecoversONOSv1Atomix" tail-magnet="14">
+        <point x="98.5" y="86.0"/>
+        <point x="98.5" y="42.5"/>
+        <point x="77.0" y="42.5"/>
+      </arc>
+      <arc head="RCO" head-magnet="8" kind="INPUT" mult="atomixmajority" mult-k="0.8864257812499999" mult-x="-2.898876953124997" mult-y="-0.5207788085937537" tail="Aup" tail-magnet="17"/>
+      <arc head="Aup" head-magnet="18" kind="OUTPUT" mult="atomixmajority" mult-k="0.5536132812500001" mult-x="3.2486816406250014" mult-y="0.7810229492187482" tail="RCO" tail-magnet="4">
+        <point x="31.0" y="25.5"/>
+      </arc>
+      <arc broken="true" head="ONOSv1FailSW" head-magnet="16" kind="INHIBITOR" mult-k="1.0641601562499998" tail="Codown">
+        <point x="47.5" y="21.5"/>
+      </arc>
+      <arc broken="true" head="ONOSv2FailSW" head-magnet="15" kind="INHIBITOR" mult-k="1.28623046875" tail="Codown">
+        <point x="41.0" y="16.5"/>
+        <point x="106.0" y="21.5"/>
+      </arc>
+      <arc head="PartitionONOSV2" head-magnet="19" kind="INPUT" mult-k="2.06240234375" tail="OupV2">
+        <point x="141.59379844635077" y="40.619435214898466"/>
+        <point x="156.5" y="40.5"/>
+      </arc>
+      <arc broken="true" head="PartitionONOSV2" head-magnet="15" kind="INPUT" mult="atomixcount" mult-k="1.8187867641448974" mult-x="2.142009798685706" mult-y="0.8476709580421513" tail="ONOSAtomixLinkDown">
+        <point x="167.5" y="63.5"/>
+      </arc>
+      <arc head="ONOSv2Partitioned" kind="OUTPUT" tail="PartitionONOSV2" tail-magnet="6"/>
+      <arc head="LinkPartitioningONOSAtomix" head-magnet="5" kind="OUTPUT" mult="atomixcount" mult-k="0.53583984375" mult-x="2.466381809559465" mult-y="-0.4964458885047449" tail="PartitionONOSV2">
+        <point x="158.06259765625" y="60.5453125"/>
+      </arc>
+      <arc head="PartitionRecoversONOSv2Atomix" head-magnet="18" kind="INPUT" mult="atomixcount" mult-k="2.75087890625" mult-x="-2.8397411125876033" mult-y="-0.42386736757069343" tail="LinkPartitioningONOSAtomix">
+        <point x="148.0" y="66.0"/>
+        <point x="148.0" y="70.0"/>
+      </arc>
+      <arc head="PartitionRecoversONOSv2Atomix" kind="INPUT" tail="ONOSv2Partitioned"/>
+      <arc broken="true" head="OupV2" kind="OUTPUT" mult-k="2.5902691662311557" tail="PartitionRecoversONOSv2Atomix" tail-magnet="0">
+        <point x="163.0" y="82.0"/>
+        <point x="127.5" y="31.5"/>
+      </arc>
+      <arc head="PartitionONOSV1" head-magnet="11" kind="INPUT" mult="atomixcount" mult-k="1.86474609375" mult-x="-1.497802734375" mult-y="-0.9567626953124915" tail="ONOSAtomixLinkDown">
+        <point x="119.0" y="68.0"/>
+      </arc>
+      <arc head="LinkPartitioningONOSAtomix" kind="OUTPUT" mult="atomixcount" mult-k="0.3700195312500001" mult-y="-6.671182368833684E-4" tail="PartitionONOSV1">
+        <point x="140.0" y="58.33242484829621"/>
+        <point x="140.0" y="51.0"/>
+      </arc>
+      <arc head="PartitionRecoversONOSv1Atomix" head-magnet="15" kind="INPUT" mult="atomixcount" mult-k="1.88388671875" mult-x="2.6473144531250057" mult-y="0.4972607421874926" tail="LinkPartitioningONOSAtomix" tail-magnet="8">
+        <point x="143.5" y="52.0"/>
+      </arc>
+      <arc head="ONOSAtomixLinkDown" kind="OUTPUT" mult="acountsub1" mult-k="1.9194335937499996" mult-x="-2.6365722656249915" mult-y="0.7544726562499875" tail="PartitionRecoversONOSv1Atomix" tail-magnet="10">
+        <point x="141.0" y="86.0"/>
+        <point x="116.0" y="77.5"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkDown" head-magnet="9" kind="OUTPUT" mult="acountsub1" mult-k="0.5219936728477479" mult-x="1.0398945096727346" mult-y="0.6920210980654531" tail="PartitionRecoversONOSv2Atomix">
+        <point x="154.0" y="87.5"/>
+        <point x="105.0" y="66.0"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkUp" kind="OUTPUT" mult-k="0.86318359375" tail="PartitionRecoversONOSv2Atomix" tail-magnet="19">
+        <point x="150.5" y="83.0"/>
+        <point x="132.5" y="54.0"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkUp" kind="OUTPUT" mult-k="2.4811523437500003" tail="PartitionRecoversONOSv1Atomix" tail-magnet="10">
+        <point x="131.5" y="84.5"/>
+        <point x="129.5" y="79.0"/>
+        <point x="127.5" y="56.0"/>
+      </arc>
+      <arc head="FCO" head-magnet="10" kind="INHIBITOR" mult="atomixmajority" mult-k="0.89228515625" mult-x="-2.5099609375000007" mult-y="-0.5188574218749977" tail="Aup"/>
+      <arc head="ONOSv1RecoverSW" kind="INPUT" tail="Ov1SWdown"/>
+      <arc head="ONOSv2RecoverSW" kind="INPUT" tail="Ov2SWdown"/>
+      <arc head="AtomixRecoverHW" head-magnet="6" kind="INPUT" tail="AHWdown"/>
+      <arc head="AtomixFailSW" kind="INPUT" tail="Aup"/>
+      <arc head="ASWdown" kind="OUTPUT" tail="AtomixFailSW"/>
+      <arc head="AtomixRecoverSW" kind="INPUT" tail="ASWdown"/>
+      <arc head="Aup" kind="OUTPUT" tail="AtomixRecoverSW"/>
+      <arc head="Ov1SWdown" kind="OUTPUT" tail="ONOSv1FailSW"/>
+      <arc head="Ov1HWdown" kind="OUTPUT" tail="ONOSv1FailHW" tail-magnet="18"/>
+      <arc head="ONOSv1RecoverHW" kind="INPUT" tail="Ov1HWdown"/>
+      <arc head="Ov1up" kind="OUTPUT" tail="ONOSv1RecoverHW"/>
+      <arc head="ONOSv1FailHW" kind="INPUT" tail="Ov1up"/>
+      <arc head="Ov2SWdown" kind="OUTPUT" tail="ONOSv2FailSW"/>
+      <arc head="Ov2HWdown" kind="OUTPUT" tail="ONOSv2FailHW"/>
+      <arc head="ONOSv2RecoverHW" kind="INPUT" tail="Ov2HWdown"/>
+      <arc head="OupV2" kind="OUTPUT" tail="ONOSv2RecoverHW"/>
+      <arc head="StartUpgradeONOSV1V2" head-magnet="11" kind="INHIBITOR" tail="AtomixBeingUpgradedV1V2"/>
+      <arc head="RCO" kind="INPUT" tail="Codown"/>
+      <arc head="Coup" kind="OUTPUT" tail="RCO" tail-magnet="0"/>
+      <arc head="ONOSUpgradeFinishedV1V2FailEncountered" head-magnet="17" kind="INPUT" tail="ONOSBeingUpgradedV1V2"/>
+      <arc broken="true" head="OupV2" kind="OUTPUT" mult-k="2.17919921875" tail="ONOSUpgradeFinishedV1V2FailEncountered">
+        <point x="95.0" y="60.0"/>
+        <point x="118.0" y="35.0"/>
+      </arc>
+      <arc head="ONOSv2FailHW" kind="INPUT" tail="OupV2"/>
+      <arc head="ONOSv3FailSW" head-magnet="19" kind="INPUT" tail="OupV3"/>
+      <arc head="OupV3" kind="OUTPUT" tail="ONOSv3RecoverSW" tail-magnet="18"/>
+      <arc broken="true" head="ONOSv3FailSW" head-magnet="15" kind="INHIBITOR" mult-k="1.28623046875" tail="Codown">
+        <point x="49.0" y="18.5"/>
+        <point x="140.5" y="21.0"/>
+      </arc>
+      <arc head="PartitionONOSV3" head-magnet="15" kind="INPUT" mult-k="1.06240234375" tail="OupV3">
+        <point x="179.5" y="40.5"/>
+      </arc>
+      <arc broken="true" head="OupV3" kind="OUTPUT" mult-k="2.5902691662311557" tail="PartitionRecoversONOSv3Atomix" tail-magnet="1">
+        <point x="183.0" y="79.0"/>
+        <point x="169.5" y="29.5"/>
+      </arc>
+      <arc head="ONOSv3RecoverSW" kind="INPUT" tail="Ov3SWdown"/>
+      <arc head="Ov3SWdown" kind="OUTPUT" tail="ONOSv3FailSW"/>
+      <arc head="Ov3HWdown" kind="OUTPUT" tail="ONOSv3FailHW"/>
+      <arc head="ONOSv3RecoverHW" kind="INPUT" tail="Ov3HWdown"/>
+      <arc head="OupV3" kind="OUTPUT" tail="ONOSv3RecoverHW"/>
+      <arc head="ONOSv3FailHW" kind="INPUT" tail="OupV3"/>
+      <arc head="ONOSv3Partitioned" kind="OUTPUT" tail="PartitionONOSV3" tail-magnet="6"/>
+      <arc head="PartitionRecoversONOSv3Atomix" kind="INPUT" tail="ONOSv3Partitioned"/>
+      <arc head="LinkPartitioningONOSAtomix" head-magnet="5" kind="OUTPUT" mult="atomixcount" mult-k="0.43662109375" mult-x="-2.5" mult-y="-0.500274276521111" tail="PartitionONOSV3">
+        <point x="178.0" y="60.0"/>
+      </arc>
+      <arc head="PartitionRecoversONOSv3Atomix" head-magnet="15" kind="INPUT" mult="atomixcount" mult-k="1.86630859375" mult-x="2.8556152343749943" mult-y="0.0021923828124954525" tail="LinkPartitioningONOSAtomix" tail-magnet="2">
+        <point x="181.5" y="52.0"/>
+      </arc>
+      <arc broken="true" head="PartitionONOSV3" head-magnet="19" kind="INPUT" mult="atomixcount" mult-k="3.729917097091676" mult-x="-1.9877668301264464" mult-y="0.4197362732887271" tail="ONOSAtomixLinkDown" tail-magnet="18">
+        <point x="133.5" y="60.5"/>
+        <point x="151.5" y="58.5"/>
+        <point x="170.5" y="64.5"/>
+      </arc>
+      <arc head="ONOSv4FailSW" head-magnet="19" kind="INPUT" tail="OupV4"/>
+      <arc head="OupV4" kind="OUTPUT" tail="ONOSv4RecoverSW" tail-magnet="18"/>
+      <arc broken="true" head="ONOSv4FailSW" head-magnet="15" kind="INHIBITOR" mult-k="1.28623046875" tail="Codown">
+        <point x="39.0" y="14.5"/>
+        <point x="181.5" y="21.5"/>
+      </arc>
+      <arc head="PartitionONOSV4" head-magnet="15" kind="INPUT" mult-k="1.06240234375" tail="OupV4">
+        <point x="199.0" y="30.5"/>
+      </arc>
+      <arc broken="true" head="OupV4" kind="OUTPUT" mult-k="2.5902691662311557" tail="PartitionRecoversONOSv4Atomix" tail-magnet="0">
+        <point x="202.0" y="62.0"/>
+        <point x="210.5" y="29.5"/>
+      </arc>
+      <arc head="ONOSv4RecoverSW" kind="INPUT" tail="Ov4SWdown"/>
+      <arc head="Ov4SWdown" kind="OUTPUT" tail="ONOSv4FailSW"/>
+      <arc head="Ov4HWdown" kind="OUTPUT" tail="ONOSv4FailHW"/>
+      <arc head="ONOSv4RecoverHW" kind="INPUT" tail="Ov4HWdown"/>
+      <arc head="OupV4" kind="OUTPUT" tail="ONOSv4RecoverHW"/>
+      <arc head="ONOSv4FailHW" kind="INPUT" tail="OupV4"/>
+      <arc head="PartitionRecoversONOSv4Atomix" kind="INPUT" tail="ONOSv4Partitioned"/>
+      <arc head="ONOSv4Partitioned" kind="OUTPUT" tail="PartitionONOSV4" tail-magnet="6"/>
+      <arc head="LinkPartitioningONOSAtomix" head-magnet="4" kind="OUTPUT" mult="atomixcount" mult-k="0.27158203125" mult-x="2.520373411976891" mult-y="-0.5321326339664836" tail="PartitionONOSV4" tail-magnet="17"/>
+      <arc head="PartitionRecoversONOSv4Atomix" head-magnet="15" kind="INPUT" mult="atomixcount" mult-k="1.85166015625" mult-x="2.8580566406249943" mult-y="9.716796874954525E-4" tail="LinkPartitioningONOSAtomix" tail-magnet="1">
+        <point x="200.5" y="51.5"/>
+      </arc>
+      <arc broken="true" head="PartitionONOSV4" head-magnet="10" kind="INPUT" mult="atomixcount" mult-k="2.791800928115845" mult-x="-1.5221088171005306" mult-y="0.391478700637812" tail="ONOSAtomixLinkDown" tail-magnet="19">
+        <point x="129.0" y="62.5"/>
+        <point x="185.0" y="66.5"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkDown" head-magnet="10" kind="OUTPUT" mult="acountsub1" mult-k="0.3073693752288819" mult-x="0.9221081256866341" mult-y="0.7965252184867779" tail="PartitionRecoversONOSv3Atomix" tail-magnet="11">
+        <point x="172.0" y="87.0"/>
+        <point x="102.0" y="64.5"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkDown" head-magnet="11" kind="OUTPUT" mult="acountsub1" mult-k="0.5657256603240967" mult-x="-1.0856858491897583" mult-y="1.0651411509513764" tail="PartitionRecoversONOSv4Atomix" tail-magnet="11">
+        <point x="193.0" y="86.5"/>
+        <point x="103.0" y="63.0"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkUp" head-magnet="19" kind="OUTPUT" mult-k="0.10649094581604006" tail="PartitionRecoversONOSv3Atomix" tail-magnet="19">
+        <point x="167.5" y="69.0"/>
+        <point x="134.5" y="52.5"/>
+      </arc>
+      <arc broken="true" head="ONOSAtomixLinkUp" head-magnet="17" kind="OUTPUT" tail="PartitionRecoversONOSv4Atomix" tail-magnet="19">
+        <point x="184.5" y="68.0"/>
+        <point x="138.5" y="51.0"/>
+        <point x="133.0" y="51.0"/>
+      </arc>
+      <arc head="UpgradeClusterV1V2" head-magnet="8" kind="INHIBITOR" tail="AtomixUpgradeV1V2Ready"/>
+      <arc head="ONOSUpgradeV2V3Ready" kind="OUTPUT" tail="UpgradeClusterV2V3" tail-magnet="5"/>
+      <arc head="ONOSUpgradeFinishedV2V3" kind="INPUT" tail="ONOSBeingUpgradedV2V3"/>
+      <arc broken="true" head="OupV3" kind="OUTPUT" mult-k="2.7786852151155474" tail="ONOSUpgradeFinishedV2V3">
+        <point x="97.5" y="85.0"/>
+        <point x="169.0" y="32.0"/>
+      </arc>
+      <arc head="AtomixUpgradeV2V3Ready" head-magnet="8" kind="OUTPUT" tail="UpgradeClusterV2V3" tail-magnet="9"/>
+      <arc head="StartUpgradeONOSV2V3" kind="INPUT" tail="ONOSUpgradeV2V3Ready"/>
+      <arc head="ONOSBeingUpgradedV2V3" kind="OUTPUT" tail="StartUpgradeONOSV2V3"/>
+      <arc head="StartUpgradeAtomixV2V3" kind="INPUT" tail="AtomixUpgradeV2V3Ready"/>
+      <arc head="AtomixBeingUpgradedV2V3" kind="OUTPUT" tail="StartUpgradeAtomixV2V3"/>
+      <arc head="Aup" head-magnet="0" kind="OUTPUT" mult-k="1.20654296875" tail="AtomixUpgradeFinishedV2V3">
+        <point x="38.5" y="95.0"/>
+        <point x="38.5" y="36.0"/>
+      </arc>
+      <arc head="AtomixUpgradeFinishedV2V3" kind="INPUT" mult-k="1.2633789062499998" tail="AtomixBeingUpgradedV2V3">
+        <point x="74.0" y="109.0"/>
+      </arc>
+      <arc head="StartUpgradeAtomixV2V3" kind="INPUT" mult-k="1.1383789062499998" tail="Aup" tail-magnet="2">
+        <point x="36.0" y="36.5"/>
+        <point x="36.0" y="103.0"/>
+      </arc>
+      <arc head="AtomixUpgradeV2V3Ready" head-magnet="8" kind="OUTPUT" tail="AtomixUpgradeFinishedV2V3">
+        <point x="52.0" y="96.0"/>
+      </arc>
+      <arc head="StartUpgradeAtomixV2V3" head-magnet="3" kind="INPUT" mult-k="0.8454101562500002" tail="AtomixLeftToUpgradeV2V3">
+        <point x="58.0" y="98.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV2V3" head-magnet="12" kind="INHIBITOR" mult-k="0.76298828125" tail="AtomixLeftToUpgradeV2V3">
+        <point x="74.0" y="98.0"/>
+      </arc>
+      <arc broken="true" head="StartUpgradeONOSV2V3" head-magnet="0" kind="INPUT" mult-k="2.0383789062499997" tail="OupV2">
+        <point x="107.5" y="31.5"/>
+        <point x="74.0" y="84.0"/>
+      </arc>
+      <arc head="ONOSUpgradeV2V3Ready" kind="OUTPUT" tail="StartUpgradeONOSV2V3" tail-magnet="15">
+        <point x="66.0" y="85.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV2V3" head-magnet="9" kind="INHIBITOR" tail="ONOSBeingUpgradedV2V3" tail-magnet="7"/>
+      <arc head="UpgradeClusterV2V3" head-magnet="6" kind="INHIBITOR" tail="ONOSUpgradeV2V3Ready">
+        <point x="58.0" y="92.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV2V3" head-magnet="11" kind="INHIBITOR" tail="AtomixBeingUpgradedV2V3"/>
+      <arc head="ONOSUpgradeFinishedV2V3FailEncountered" head-magnet="17" kind="INPUT" tail="ONOSBeingUpgradedV2V3"/>
+      <arc broken="true" head="OupV3" kind="OUTPUT" mult-k="2.17919921875" tail="ONOSUpgradeFinishedV2V3FailEncountered">
+        <point x="97.0" y="94.0"/>
+        <point x="148.5" y="29.0"/>
+      </arc>
+      <arc head="UpgradeClusterV2V3" head-magnet="10" kind="INPUT" mult="atomixcount" mult-k="2.690636014938354" mult-x="-1.0804413747787365" mult-y="0.5" tail="Aup" tail-magnet="2">
+        <point x="36.0" y="36.5"/>
+        <point x="36.0" y="96.0"/>
+      </arc>
+      <arc head="Aup" head-magnet="0" kind="OUTPUT" mult="atomixcount" mult-k="0.4393361568450928" mult-x="-0.07400778055190926" mult-y="0.5" tail="UpgradeClusterV2V3" tail-magnet="18">
+        <point x="38.5" y="94.0"/>
+        <point x="38.5" y="36.0"/>
+      </arc>
+      <arc broken="true" head="UpgradeClusterV2V3" head-magnet="16" kind="INPUT" mult="onoscount" mult-k="3.506347656250001" mult-x="-0.31022949218750284" mult-y="0.5" tail="OupV2">
+        <point x="109.5" y="34.5"/>
+        <point x="103.5" y="33.0"/>
+        <point x="41.5" y="92.0"/>
+      </arc>
+      <arc broken="true" head="OupV2" kind="OUTPUT" mult="onoscount" mult-k="0.25439453125" mult-x="-2.004345703124997" tail="UpgradeClusterV2V3" tail-magnet="0">
+        <point x="43.0" y="90.0"/>
+        <point x="43.0" y="66.0"/>
+        <point x="108.5" y="40.0"/>
+      </arc>
+      <arc head="UpgradeClusterV2V3" head-magnet="8" kind="INHIBITOR" tail="AtomixUpgradeV2V3Ready"/>
+      <arc head="ONOSUpgradeV3V4Ready" kind="OUTPUT" tail="UpgradeClusterV3V4" tail-magnet="5"/>
+      <arc head="ONOSUpgradeFinishedV3V4" kind="INPUT" tail="ONOSBeingUpgradedV3V4"/>
+      <arc broken="true" head="OupV4" kind="OUTPUT" mult-k="2.7786852151155474" tail="ONOSUpgradeFinishedV3V4">
+        <point x="97.5" y="119.0"/>
+        <point x="188.5" y="31.0"/>
+      </arc>
+      <arc head="AtomixUpgradeV3V4Ready" head-magnet="8" kind="OUTPUT" tail="UpgradeClusterV3V4" tail-magnet="9"/>
+      <arc head="StartUpgradeONOSV3V4" kind="INPUT" tail="ONOSUpgradeV3V4Ready"/>
+      <arc head="ONOSBeingUpgradedV3V4" kind="OUTPUT" tail="StartUpgradeONOSV3V4"/>
+      <arc head="StartUpgradeAtomixV3V4" kind="INPUT" tail="AtomixUpgradeV3V4Ready"/>
+      <arc head="AtomixBeingUpgradedV3V4" kind="OUTPUT" tail="StartUpgradeAtomixV3V4"/>
+      <arc head="Aup" head-magnet="0" kind="OUTPUT" mult-k="1.20654296875" tail="AtomixUpgradeFinishedV3V4">
+        <point x="38.5" y="129.0"/>
+        <point x="38.5" y="36.0"/>
+      </arc>
+      <arc head="AtomixUpgradeFinishedV3V4" kind="INPUT" mult-k="1.2633789062499998" tail="AtomixBeingUpgradedV3V4">
+        <point x="74.0" y="143.0"/>
+      </arc>
+      <arc head="StartUpgradeAtomixV3V4" kind="INPUT" mult-k="2.1383789062499994" tail="Aup" tail-magnet="2">
+        <point x="32.5" y="34.5"/>
+        <point x="36.0" y="36.5"/>
+        <point x="36.0" y="137.0"/>
+      </arc>
+      <arc head="AtomixUpgradeV3V4Ready" head-magnet="8" kind="OUTPUT" tail="AtomixUpgradeFinishedV3V4">
+        <point x="52.0" y="130.0"/>
+      </arc>
+      <arc head="StartUpgradeAtomixV3V4" head-magnet="3" kind="INPUT" mult-k="0.8454101562500002" tail="AtomixLeftToUpgradeV3V4">
+        <point x="58.0" y="132.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV3V4" head-magnet="12" kind="INHIBITOR" mult-k="0.76298828125" tail="AtomixLeftToUpgradeV3V4">
+        <point x="74.0" y="132.0"/>
+      </arc>
+      <arc broken="true" head="StartUpgradeONOSV3V4" head-magnet="0" kind="INPUT" mult-k="2.0383789062499997" tail="OupV3">
+        <point x="107.5" y="65.5"/>
+        <point x="74.0" y="118.0"/>
+      </arc>
+      <arc head="ONOSUpgradeV3V4Ready" kind="OUTPUT" tail="StartUpgradeONOSV3V4" tail-magnet="15">
+        <point x="66.0" y="119.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV3V4" head-magnet="9" kind="INHIBITOR" tail="ONOSBeingUpgradedV3V4" tail-magnet="7"/>
+      <arc head="UpgradeClusterV3V4" head-magnet="6" kind="INHIBITOR" tail="ONOSUpgradeV3V4Ready">
+        <point x="58.0" y="126.0"/>
+      </arc>
+      <arc head="StartUpgradeONOSV3V4" head-magnet="11" kind="INHIBITOR" tail="AtomixBeingUpgradedV3V4"/>
+      <arc head="ONOSUpgradeFinishedV3V4FailEncountered" head-magnet="17" kind="INPUT" tail="ONOSBeingUpgradedV3V4"/>
+      <arc broken="true" head="OupV4" kind="OUTPUT" mult-k="2.17919921875" tail="ONOSUpgradeFinishedV3V4FailEncountered">
+        <point x="97.5" y="128.0"/>
+        <point x="189.5" y="37.5"/>
+      </arc>
+      <arc head="UpgradeClusterV3V4" head-magnet="10" kind="INPUT" mult="atomixcount" mult-k="2.690636014938354" mult-x="-1.0804413747787365" mult-y="0.5" tail="Aup" tail-magnet="2">
+        <point x="36.0" y="36.5"/>
+        <point x="36.0" y="130.0"/>
+      </arc>
+      <arc head="Aup" head-magnet="0" kind="OUTPUT" mult="atomixcount" mult-k="0.4393361568450928" mult-x="-0.07400778055190926" mult-y="0.5" tail="UpgradeClusterV3V4" tail-magnet="18">
+        <point x="38.5" y="128.0"/>
+        <point x="38.5" y="36.0"/>
+      </arc>
+      <arc broken="true" head="UpgradeClusterV3V4" head-magnet="16" kind="INPUT" mult="onoscount" mult-k="3.506347656250001" mult-x="-0.31022949218750284" mult-y="0.5" tail="OupV3">
+        <point x="138.5" y="32.0"/>
+        <point x="103.5" y="67.0"/>
+        <point x="41.5" y="126.0"/>
+      </arc>
+      <arc broken="true" head="OupV3" kind="OUTPUT" mult="onoscount" mult-k="0.25439453125" mult-x="-2.004345703124997" tail="UpgradeClusterV3V4" tail-magnet="0">
+        <point x="43.0" y="124.0"/>
+        <point x="43.0" y="100.0"/>
+        <point x="108.5" y="74.0"/>
+        <point x="155.5" y="35.5"/>
+      </arc>
+      <arc head="UpgradeClusterV3V4" head-magnet="8" kind="INHIBITOR" tail="AtomixUpgradeV3V4Ready"/>
+      <arc broken="true" head="AtomixFailSW" kind="INHIBITOR" mult-k="1.4172851562499997" tail="Codown" tail-magnet="9">
+        <point x="29.5" y="19.5"/>
+        <point x="26.34140625" y="28.4818359375"/>
+      </arc>
+      <arc head="PartitionLastAtomixInstances" head-magnet="12" kind="INPUT" mult="2" mult-k="2.39990234375" mult-x="2.4414062499911182E-4" tail="Aup" tail-magnet="9">
+        <point x="3.5" y="26.5"/>
+        <point x="3.5" y="52.0"/>
+      </arc>
+      <arc head="PartitionLastAtomixInstances" head-magnet="5" kind="INPUT" mult-k="1.2399414062500003" tail="AtomixLinkDown">
+        <point x="19.0" y="64.0"/>
+      </arc>
+      <arc head="PartitionLastAtomixInstances" head-magnet="17" kind="INHIBITOR" mult-k="0.81455078125" tail="AtomixLinkUp" tail-magnet="10">
+        <point x="7.0" y="52.0"/>
+      </arc>
+      <arc head="LastAtomixPartitioned" kind="OUTPUT" mult="2" mult-k="0.26982421875000007" mult-x="-0.4867838541666645" mult-y="0.001704101562502558" tail="PartitionLastAtomixInstances" tail-magnet="14"/>
+      <arc head="LastLinkPartitioningAtomix" kind="OUTPUT" tail="PartitionLastAtomixInstances" tail-magnet="8"/>
+      <arc head="RecoverLastPartition" kind="INPUT" mult="2" mult-k="0.77490234375" mult-x="0.6458595594292369" mult-y="-0.1569362102761005" tail="LastAtomixPartitioned">
+        <point x="8.0" y="62.0"/>
+      </arc>
+      <arc head="RecoverLastPartition" kind="INPUT" mult-k="0.9743164062499999" tail="LastLinkPartitioningAtomix">
+        <point x="8.0" y="64.0"/>
+      </arc>
+      <arc broken="true" head="AtomixLinkUp" kind="OUTPUT" mult-k="2.18720703125" tail="RecoverLastPartition">
+        <point x="8.0" y="82.0"/>
+        <point x="14.5" y="54.0"/>
+      </arc>
+      <arc head="Aup" head-magnet="11" kind="OUTPUT" mult="2" mult-k="0.37802734375" mult-x="-0.4997608312105317" mult-y="0.5" tail="RecoverLastPartition">
+        <point x="1.5" y="70.0"/>
+        <point x="1.5" y="26.0"/>
+      </arc>
+      <arc broken="true" head="UpgradeClusterV1V2" head-magnet="18" kind="INHIBITOR" mult-k="2.5982440739870065" tail="OldArch">
+        <point x="99.0" y="13.0"/>
+        <point x="42.5" y="60.0"/>
+      </arc>
+      <arc broken="true" head="LinkFailsONOSAtomix" kind="INHIBITOR" mult-k="2.9521636962890625" tail="OldArch">
+        <point x="101.0" y="14.0"/>
+        <point x="105.5" y="44.5"/>
+      </arc>
+      <arc head="ONOSClusterFails" head-magnet="1" kind="INPUT" tail="ONOSClusterUp"/>
+      <arc head="ONOSClusterDown" kind="OUTPUT" tail="ONOSClusterFails" tail-magnet="5"/>
+      <arc head="ONOSClusterRecoversv1" head-magnet="12" kind="INPUT" mult-k="1.13583984375" tail="ONOSClusterDown">
+        <point x="150.0" y="9.0"/>
+      </arc>
+      <arc head="ONOSClusterUp" kind="OUTPUT" mult-k="1.41416015625" tail="ONOSClusterRecoversv1" tail-magnet="0">
+        <point x="150.0" y="3.0"/>
+        <point x="138.0" y="3.0"/>
+      </arc>
+      <arc head="ONOSClusterUp" kind="OUTPUT" mult-k="1.2161132812499997" tail="ONOSClusterRecoversv2">
+        <point x="156.0" y="3.0"/>
+        <point x="138.0" y="3.0"/>
+      </arc>
+      <arc head="ONOSClusterRecoversv2" head-magnet="15" kind="INPUT" mult-k="1.3176757812499997" tail="ONOSClusterDown">
+        <point x="150.0" y="9.0"/>
+      </arc>
+      <arc head="ONOSClusterUp" kind="OUTPUT" mult-k="0.87138671875" tail="ONOSClusterRecoversv3">
+        <point x="160.5" y="6.0"/>
+        <point x="160.5" y="3.0"/>
+        <point x="138.0" y="3.0"/>
+      </arc>
+      <arc head="ONOSClusterRecoversv3" head-magnet="1" kind="INPUT" mult-k="0.5958007812500001" tail="ONOSClusterDown">
+        <point x="150.0" y="9.0"/>
+      </arc>
+      <arc head="ONOSClusterUp" kind="OUTPUT" mult-k="1.8172851562499996" tail="ONOSClusterRecoversv4" tail-magnet="5">
+        <point x="160.5" y="7.5"/>
+        <point x="160.5" y="3.0"/>
+        <point x="138.0" y="3.0"/>
+      </arc>
+      <arc head="ONOSClusterRecoversv4" kind="INPUT" mult-k="1.08642578125" tail="ONOSClusterDown">
+        <point x="150.0" y="9.0"/>
+      </arc>
+      <arc broken="true" head="ONOSClusterFails" kind="INHIBITOR" mult-k="3.7661621093750006" tail="Ov1up">
+        <point x="97.0" y="29.0"/>
+        <point x="98.0" y="13.5"/>
+        <point x="126.0" y="10.0"/>
+      </arc>
+      <arc broken="true" head="ONOSClusterFails" head-magnet="19" kind="INHIBITOR" mult-k="2.474102783203125" tail="OupV2">
+        <point x="135.0" y="24.5"/>
+        <point x="127.0" y="11.0"/>
+      </arc>
+      <arc broken="true" head="ONOSClusterFails" head-magnet="9" kind="INHIBITOR" mult-k="2.5727575063705443" tail="OupV3">
+        <point x="137.57954021939332" y="22.163632175514657"/>
+        <point x="138.5" y="11.0"/>
+      </arc>
+      <arc broken="true" head="ONOSClusterFails" head-magnet="7" kind="INHIBITOR" mult-k="3.8448303222656257" tail="OupV4">
+        <point x="178.5" y="25.5"/>
+        <point x="177.5" y="15.5"/>
+        <point x="137.0" y="10.0"/>
+      </arc>
+      <arc broken="true" head="ONOSClusterRecoversv1" head-magnet="18" kind="INPUT" mult-k="2.2038085937500003" tail="Ov1up">
+        <point x="97.0" y="25.5"/>
+        <point x="99.7659122842296" y="18.33131790930713"/>
+      </arc>
+      <arc broken="true" head="Ov1up" kind="OUTPUT" mult-k="0.6325195312500002" tail="ONOSClusterRecoversv1" tail-magnet="16">
+        <point x="103.5" y="16.5"/>
+        <point x="95.0" y="32.5"/>
+      </arc>
+      <arc broken="true" head="OupV2" kind="OUTPUT" mult-k="2.8868957519531255" tail="ONOSClusterRecoversv2">
+        <point x="137.0" y="17.0"/>
+        <point x="135.0" y="27.5"/>
+      </arc>
+      <arc broken="true" head="ONOSClusterRecoversv2" head-magnet="19" kind="INPUT" mult-k="2.951708984375" tail="OupV2">
+        <point x="133.5" y="30.5"/>
+        <point x="153.0" y="9.0"/>
+      </arc>
+      <arc broken="true" head="OupV3" kind="OUTPUT" tail="ONOSClusterRecoversv3"/>
+      <arc head="ONOSClusterRecoversv3" kind="INPUT" mult-k="1.31748046875" tail="OupV3">
+        <point x="149.0" y="27.5"/>
+        <point x="141.5" y="27.5"/>
+        <point x="141.5" y="12.0"/>
+      </arc>
+      <arc head="OupV4" kind="OUTPUT" mult-k="1.4944335937499997" tail="ONOSClusterRecoversv4" tail-magnet="6">
+        <point x="182.0" y="12.0"/>
+        <point x="182.0" y="26.5"/>
+        <point x="193.0" y="26.5"/>
+      </arc>
+      <arc head="ONOSClusterRecoversv4" head-magnet="9" kind="INPUT" mult-k="1.48134765625" tail="OupV4">
+        <point x="181.0" y="29.0"/>
+        <point x="181.0" y="13.0"/>
+      </arc>
+      <arc head="ClusterFailsCo" kind="INHIBITOR" mult-k="1.45908203125" tail="Coup" tail-magnet="1">
+        <point x="62.0" y="9.0"/>
+      </arc>
+      <arc head="ClusterRecovers" kind="INPUT" mult-k="1.13955078125" tail="Coup">
+        <point x="62.0" y="4.5"/>
+      </arc>
+      <arc head="Coup" head-magnet="16" kind="OUTPUT" mult-k="0.96865234375" tail="ClusterRecovers" tail-magnet="8">
+        <point x="62.0" y="2.5"/>
+      </arc>
+      <arc head="ClusterFailsCo" kind="INPUT" tail="Cluster"/>
+      <arc head="Cluster" kind="OUTPUT" mult-k="1.30419921875" tail="ClusterRecovers">
+        <point x="90.5" y="4.5"/>
+      </arc>
+      <arc head="ClusterRecovers" kind="INPUT" tail="ONOSClusterUp"/>
+      <arc head="ClusterFailsONOS" kind="INPUT" tail="Cluster"/>
+      <arc head="ClusterFailsONOS" kind="INHIBITOR" tail="ONOSClusterUp"/>
+      <arc head="ONOSClusterUp" kind="OUTPUT" tail="ClusterRecovers" tail-magnet="18"/>
+      <arc head="ClusterRecovers" kind="INHIBITOR" mult-k="0.6704101562500001" tail="Cluster">
+        <point x="87.5" y="5.0"/>
+      </arc>
+      <arc head="Ov1up" head-magnet="7" kind="OUTPUT" mult="onoscount" mult-k="0.6780273437500001" mult-x="0.30870117187500057" tail="UpgradeClusterV1V2" tail-magnet="0">
+        <point x="44.0" y="56.0"/>
+        <point x="44.0" y="41.0"/>
+        <point x="71.5" y="41.0"/>
+      </arc>
+      <arc head="UpgradeClusterV1V2" head-magnet="16" kind="INPUT" mult="onoscount" mult-k="4.236621093750001" tail="Ov1up" tail-magnet="8">
+        <point x="70.5" y="40.0"/>
+        <point x="43.0" y="40.0"/>
+        <point x="43.0" y="58.0"/>
+        <point x="44.0002001953125" y="58.0"/>
+        <point x="45.90024440717698" y="58.0"/>
+      </arc>
+      <arc head="UpgradeClusterV1V2" head-magnet="10" kind="INPUT" mult="atomixcount" mult-k="2.5983398437500003" tail="Aup" tail-magnet="2">
+        <point x="36.0" y="36.5"/>
+        <point x="36.0" y="62.0"/>
+      </arc>
+      <arc head="Aup" head-magnet="0" kind="OUTPUT" mult="atomixcount" mult-x="-0.02499999999999858" mult-y="0.5" tail="UpgradeClusterV1V2" tail-magnet="19">
+        <point x="38.5" y="61.0"/>
+        <point x="38.5" y="36.0"/>
+      </arc>
+      <arc head="ClusterFailsONOS" kind="INHIBITOR" tail="OldArch"/>
+      <arc broken="true" head="ONOSClusterFails" head-magnet="15" kind="INHIBITOR" mult-k="2.814013671875" tail="OldArch">
+        <point x="111.0" y="10.5"/>
+        <point x="125.0" y="9.0"/>
+      </arc>
+    </edges>
+  </gspn>
+  <measures gspn-name="GSPN" name="Measures" simplified-UI="false">
+    <assignments/>
+    <greatspn approx="50" max-batch="100" min-batch="20" mode="SWN_ORD_SIMUL"/>
+    <formulas>
+      <formula comment="Basic statistics of the toolchain execution." language="STAT"/>
+      <formula comment="All the basic Petri net measures" language="ALL"/>
+    </formulas>
+  </measures>
+</project>
